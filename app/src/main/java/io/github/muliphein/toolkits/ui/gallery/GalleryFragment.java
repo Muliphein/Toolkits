@@ -19,6 +19,7 @@ import com.google.android.material.snackbar.Snackbar;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import io.github.muliphein.toolkits.AlbumReadActivity;
@@ -27,6 +28,7 @@ import io.github.muliphein.toolkits.album.AlbumEntryAdapter;
 import io.github.muliphein.toolkits.databinding.FragmentGalleryBinding;
 import io.github.muliphein.toolkits.album.Album;
 import io.github.muliphein.toolkits.ui.photoview.PhotoviewFragment;
+import io.github.muliphein.toolkits.utils.WindowsSorter;
 
 public class GalleryFragment extends Fragment {
 
@@ -53,6 +55,7 @@ public class GalleryFragment extends Fragment {
         }
 
         File[] tempList = filePath.listFiles();
+        Arrays.sort(tempList, 0, tempList.length, new WindowsSorter.WindowsExplorerComparatorReverse());
         for (File file : tempList) {
             fileNameList.add(new MutableLiveData<>(file.toString()));
             Log.d(TAG, "testFillFileName: Album : "+(file.toString()));

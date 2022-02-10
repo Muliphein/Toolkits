@@ -8,9 +8,5 @@
 
 有一些好处，这个位置不会被系统相册扫描，不用担心放在这里会污染相册。其次就是为了流畅度还做了一些异步的读取图片，应该会因为这个有bug，但是也基本够用了。
 
-#### 相册一览
-![Gallery](https://github.com/Muliphein/Toolkits/blob/main/assets/Gallery.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
-
-
-#### 浏览内容
-![Browsing](https://github.com/Muliphein/Toolkits/blob/main/assets/Browsing.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/200)
+#### 效果
+<img src="https://github.com/Muliphein/Toolkits/blob/main/assets/Gallery.jpg" width = "200" height = "" alt="" align=center /> <img src="https://github.com/Muliphein/Toolkits/blob/main/assets/Browsing.jpg" width = "200" height = "" alt="" align=center />
